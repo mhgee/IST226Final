@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+	<!--<link rel="stylesheet" href="style.css">-->
+	<style>
+
+
+/*------------------------------Header---------------------------*/
+.header {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	align-content: center;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color:#3F244E;
+	width: 75%;
+}
+
+#head-img {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 1em;
+	align-content: center;
+	width: 35%;
+	filter: drop-shadow(0px 0px 20px #D48943);
+	
+}
+#head-img:hover {
+	-ms-transform: scale(1.29); 
+	-webkit-transform: scale(1.29);
+	transform: scale(1.29);
+	transition-duration: 1s;
+}
+p a {
+	text-decoration: none;
+	color: #3F244E;
+	
+}
+p a:hover {
+	color:#6F3800;
+}
+/*------------------------------Container---------------------------*/
+.container {
+	background: url("IMG_3186.JPG");
+	background-size: cover;
+	width: 100%;
+	/*max-width: 1080px;*/
+	margin: 0 auto !important; 
+	float: none !important; 
+	position: absolute;
+}
+.left {
+    float: left;
+    width: 15%;
+	position: relative;
+}
+
+.mid {
+    float: left;
+    width: 70%;
+	position: relative;
+}
+
+.right {
+    float: left;
+    width: 15%;
+	position: relative;
+}
+.clear {
+	clear: both;
+}
+
+
+/*------------------------------Navigation---------------------------*/
+nav ul {
+	list-style: none; 
+	background-color: #4D7451; 
+	text-align: center; 
+	padding: 0; 
+	justify-content: center;
+	margin: auto;	
+	z-index: 10; 
+	width: 95%;
+	list-style-type:none;
+	border-radius: 10px;
+}
+	
+nav ul li {
+	line-height: 30px; 
+	height: 60px; 
+	width: 100%;
+	
+}
+		
+nav ul li a {
+	font-size:20px;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	display:block;
+	padding: 0px 5px;
+	color: #FFFFFF;
+	text-decoration:none;
+	text-align: center;
+	}
+	
+nav ul li a:hover {
+	background-color: #BFBADE;
+}
+	
+nav ul li ul {
+	display:none;
+	width: inherit;
+		
+}
+	
+nav ul li:hover ul {
+	display:block;
+	width:inherit;
+		
+}
+		
+nav ul li ul li {
+	display: block;
+}
+/*------------------------------Graded Practice---------------------------*/
+.column {
+	float: left;
+	width: 100%;
+	padding: 10px;
+	font-size:15px;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: white;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #D48943;
+	border-radius: 10px;
+	
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-img {
+	width: 100%;
+}
+#example {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: hsla(30,100%,22%,1.00);
+	text-shadow: -2px 1px #E3B386;
+	text-align: center;
+}
+/*------------------------------------Table---------------------------------------*/
+.table {
+	width:95%;
+	float: left;
+	background-color: rgba(77,116,81,1.00);
+	margin: 0 5px;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+	line-height: 35px;
+	
+}
+
+tr {
+	font-size: 1.75vw;
+	
+}
+
+td {
+	font-size: 1vw;
+}
+
+/*------------------------------Form---------------------------*/
+.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 7px 0px;
+	flex: 1;
+}
+
+.formRow > * {
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+}
+form#survey {
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+fieldset {
+	background-color: hsla(29,63%,35%,1.00);
+	width: 100%;
+	color: white;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	text-shadow: 0px -1px 15px black;
+	border-radius: 10px;
+	display: block;
+}
+form#spinner {
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	width: 50%
+}
+form#spinner >fieldset {
+	background-color: hsla(29,63%,35%,1.00);
+	width: 100%;
+	color: white;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	text-shadow: 0px 0px 20px black;
+	border-radius: 10px;		
+}
+#button {
+	text-align: center;
+	width: 100%;
+	float: right;	
+}
+input[type=submit] {
+	color: white;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	border-radius: 4px;
+	background: hsla(286,14%,30%,1.00);
+    user-select: none;
+}
+input[type=reset] {
+	color: white;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	border-radius: 4px;
+	background: hsla(285,14%,17%,1.00);
+    user-select: none;
+}
+#click {
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+/*------------------------------Video/Audio---------------------------*/
+video {
+	width: 100%;
+	height: auto;
+}
+audio {
+	width: 100%;
+	
+}
+/*------------------------------Footer---------------------------*/
+footer {
+	align-content: center;
+	background-color: #4D7451;
+	padding: 5px 0;	
+}
+footer p {
+	color: white;
+	font-family: "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	text-align: center;
+}
+
+footer p a:hover {
+	color: hsla(29,63%,55%,1.00)
+}
+footer p a {
+	color: white;
+}
+
+
+/*------------------------------Media---------------------------*/
+@media (max-width: 650px) {
+	div.formRow {
+		flex-wrap: wrap;
+	}
+	nav ul li a{
+		font-size: 15px;
+	}
+	tr {
+		font-size: 10px;
+	}
+	.column {
+		font-size: 5px;
+	}
+}
+@media (min-width: 650px) {
+	
+}
+	</style>
+</head>
+
+<body class="container">
+	<header> 
+	<img src="MHG_4191.jpg" alt="Michelle in the forest with her dog and partner"  id="head-img" >
+	<h1 class="header"> Michelle Gee </h1>
+		<p class="header"> e-mail: <a href="mailto:ygeem@my.gvltec.edu"> ygeem@my.gvltec.edu</a></p>
+	<h1 id="example"> Click the image to see examples </h1>
+	</header>
+	<div class="left">
+	<nav>
+	   <ul>
+        <li><a href="Index.html">Home</a></li>
+       	<li><a href="GP.html">Graded Practices</a>
+				<ul> 
+				<li><a href="http://ist226mgee.atwebpages.com/chapter1/mp_index_txt.html" target="_blank">Tutorial 1</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter2/tss_home.html" target="_blank">Tutorial 2</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter3/pc_home.html" target="_blank">Tutorial 3</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter4/tb_komatsu.html" target="_blank">Tutorial 4</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter5/tf_home.html" target="_blank">Tutorial 5</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter6/dlr_lw0414.html" target="_blank">Tutorial 6</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter7/rb_survey.html" target="_blank">Tutorial 7</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter8/cp_royal.html" target="_blank">Tutorial 8</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter9/tny_clock.html" target="_blank">Tutorial 9</a></li>
+				<li><a href="http://ist226mgee.atwebpages.com/chapter10/lht_august.html" target="_blank">Tutorial 10</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	</div>
+	<div class="mid">
+		
+		<div class="row">
+			<div class="column">
+				<a href="http://ist226mgee.atwebpages.com/chapter1/mp_index_txt.html" target="_blank"><img src="1.JPG" alt="Graded Practice 1"  class="col-img" ></a>
+				<p> In tutorial 1 I learned about character encoding which can be quite useful when I want to insert a symbol, most likely to be the copyright symbol (©). </p>
+			</div>
+			<div class="column">
+				<a href="http://ist226mgee.atwebpages.com/chapter2/tss_home.html" target="_blank"><img src="2.JPG" alt="Graded Practice 2"  class="col-img" ></a>
+				<p>In tutorial 2 I learned about the HSLa color model. Previous I had just used RGBa to choose a color with a needed opacity, but HSL makes it easier for my brain to comprehend what value exactly that I am manipulating. </p>
+			</div>
+			<div class="column">
+			 <a href="http://ist226mgee.atwebpages.com/chapter3/pc_home.html" target="_blank"><img src="3.JPG" alt="Graded Practice 3"  class="col-img" ></a>
+				<p>In tutorial 3 I learned about "clear", which makes it easier for a allowing two elements align side by side. Previously this was something that caused me a lot of headaches and frustration. </p>
+			</div>
+			<div class="column">
+			 <a href="http://ist226mgee.atwebpages.com/chapter4/tb_komatsu.html" target="_blank"><img src="4.JPG" alt="Graded Practice 4"  class="col-img" ></a>
+			 <p>In tutorial 4 I learned about color gradients, which I previously did not realilze was s feature. This is a quick and easy way to add a pop of color to an element without needing to create a graphic and then setting that as the background. </p>
+			</div>
+			<div class="column">
+			 <a href="http://ist226mgee.atwebpages.com/chapter5/tf_home.html" target="_blank"><img src="5.JPG" alt="Graded Practice 5"  class="col-img" ></a>
+				<p>In tutorial 5 I learned about media queries which make it easy to create a responsive website that responds to different web browser sizes and devices. Namely, converting your desktop site into a web friendly version. </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<a href="http://ist226mgee.atwebpages.com/chapter6/dlr_lw0414.html" target="_blank"><img src="6.JPG" alt="Graded Practice 6"  class="col-img" ></a>
+				<p>In tutorial 6 I learned about creating tables by using column and row groups.  </p>
+			</div>
+			<div class="column">
+				<a href="http://ist226mgee.atwebpages.com/chapter7/rb_survey.html" target="_blank"><img src="7.JPG" alt="Graded Practice 7"  class="col-img" ></a>
+				<p>In tutorial 7 I learned about creating web forms and the different input types that are available, as well as how to use javescript with the submission of said forms.</p>
+			</div>
+			<div class="column">
+			 <a href="http://ist226mgee.atwebpages.com/chapter8/cp_royal.html" target="_blank"><img src="8.JPG" alt="Graded Practice 8"  class="col-img" ></a>
+				<p>In tutorial 8 I learned about adding audio and video files. It was important to see the need to mutiple file types to ensure compatibility across all platform types. </p>
+			</div>
+			<div class="column">
+			 <a href="http://ist226mgee.atwebpages.com/chapter9/tny_clock.html" target="_blank"><img src="9.JPG" alt="Graded Practice 9"  class="col-img" ></a>
+			 <p>In tutorial 9 I learned about JavaScript and how to better utilize it. Javascript has many different applications and the coding is a bit similar to CSS and HTML.</p>
+			</div>
+			<div class="column">
+			 <a href="http://ist226mgee.atwebpages.com/chapter10/lht_august.html" target="_blank"><img src="10.JPG" alt="Graded Practice 10"  class="col-img" ></a>
+				<p>In tutorial 10 I learned about arrays which are essentially just lists. They help to collect a variety of values under a single name, providing organization for your data.</p>
+			</div>
+
+		</div>
+		<div>
+		<form id="survey"> 
+			<fieldset id="studentInfo"><legend> Student Information</legend>
+				<div class="formRow"> <label for="name">Name</label>
+				<input name="stuName" id="name" type="text" placeholder="Michelle" required/>
+				</div>
+				<div class="formRow">
+				<label for="email">E-mail</label>
+				<input name="mail" id="email" type="email" placeholder="ygeem@my.gvltec.edu"/>
+				</div>
+				<div class="formRow">
+				<label for="phone">Phone</label>
+				<input name="phone" id="phone" type="tel" placeholder="(864)123-4567"/>
+				</div>
+			</fieldset>
+				<div id="button">
+				<input type="submit" value="Submit" onclick="myFunction()"/>
+				<input type="reset" value="Cancel"/>
+					<p id="click"></p>
+					<script>
+						function myFunction() {
+						  document.getElementById("click").innerHTML = "Submitted";
+						}
+					</script>
+				</div>
+		</form>
+		</div>
+		<audio controls>
+			<source src="BELLHand_Bell4.ogg" type="audio/ogg">
+			<source src="BELLHand_Bell4.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+		</audio>
+		<video controls>
+			<source src="ist226.mp4" type="video/mp4">
+			<source src="ist226.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+		</video>
+	</div>
+
+	<div class="right">
+		<div class="table">
+		<table>
+  		<tr>
+    		<th>Tutorial</th>
+    		<th>Grade</th>
+  		</tr>
+		<tr>
+    		<td>Tutorial 1</td>
+    		<td>0</td>
+  		</tr>
+  		<tr>
+    		<td>Tutorial 2</td>
+    		<td>100</td>
+  		</tr>
+		<tr>
+    		<td>Tutorial 3</td>
+    		<td>100</td>
+  		</tr>
+		<tr>
+    		<td>Tutorial 4</td>
+    		<td>100</td>
+  		</tr>
+		<tr>
+    		<td>Tutorial 5</td>
+    		<td>100</td>
+  		</tr>
+		<tr>
+    		<td>Tutorial 6</td>
+    		<td>100</td>
+  		</tr>
+		<tr>
+    		<td>Tutorial 7</td>
+    		<td>100</td>
+  		</tr>
+		<tr>
+    		<td>Tutorial 8</td>
+    		<td>100</td>
+  		</tr>
+		<tr>
+    		<td>Tutorial 9</td>
+    		<td>100</td>
+  		</tr>
+		<tr>
+    		<td>Tutorial 10</td>
+    		<td>100</td>
+  		</tr>
+		</table>
+		</div>
+	</div>
+	<div class="clear"> </div>
+	<footer> 
+	<p> Created November 30, 2020 | IST 226 |  <a href="https://www.gvltec.edu/" target="_blank"> Greenville Technical College</a></p></footer>
+</body>
+
+</html>
